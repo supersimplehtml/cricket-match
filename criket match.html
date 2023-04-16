@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <button onclick="openPage1()" class="b1">Courtesy Essay</button>
+    <button onclick="openPage2()" class="b2">My Favourite Book</button>
+  </div>
+  
+  <link rel="icon " type="images/x-icon" href="/download-removebg-preview (22).ico">
+  <style>
+     .sidepanel {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition for opening and closing the panel */
+  padding-top: 60px; /* Place content 60px from the top */
+}
+.b1{
+  margin-top: 115px;
+  background-color: #111;
+  color: white;
+  width:inherit ;
+  height: 50px;
+  border-color: white;
+}
+.b2{
+  
+  background-color: #111;
+  color: white;
+  width:inherit ;
+  height: 50px;
+  border-color: white;
+}
+
+/* The close button */
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-top: 110px;
+}
+
+/* Style the button that opens the side panel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+    header {
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgb(112, 138, 255);
+
+  
+}
+.button{
+  background-color:rgb(112, 138, 255) ;
+  border: none;
+  height:60px ;
+  cursor:pointer;
+  border-radius:50px ;
+  width: 70px;
+  margin-top: 15px;
+  display: inline;
+}
+h1{
+ 
+  font-size: 70px;
+}
+.sign-in{
+background-color:rgb(0, 183, 255) ;
+border: none;
+height: 46px;
+border-radius: 50px;
+margin-right: 20px;
+width:60px ;
+cursor: pointer;
+}
+.p{
+  margin-top: 100px;
+}
+p{
+  font-size: 50px;
+  font-family:arial ;
+  
+}
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Essays</title>
+  <header >
+  <div class="more-options">
+    <button onclick="openNav();" class="button">
+      <img style="height: 60px;" src="/images-removebg-preview (8).png" >
+    </button>
+</div>
+<div>
+  <h1>
+   Cricket Match
+  </h1>
+</div>
+<div>
+  <button id="si" onclick="signIn() " class="sign-in">
+    Sign In
+  </button>
+</div>
+  </header>
+</head>
+
+<body style="background-color: rgb(0, 193, 252);">
+  <p class="p">
+    The 2017 ICC Champions Trophy Final was a highly anticipated cricket match that took place on June 18, 2017, at The Oval, London, England. The match was played between arch-rivals India and Pakistan, and was the first time in ten years that the two teams had faced each other in a major ICC tournament final. 
+  
+  </p>
+  <p>
+    The match was a high-stakes encounter, with both teams determined to win the prestigious Champions Trophy. India was the running champion, having won the tournament in 2013, while Pakistan was seeking their first ever Champions Trophy title. The build-up to the match was intense, with fans of both teams eagerly anticipating the showdown.
+  </p>
+  <p>
+    The match started with India won the toss and elected to field first. Pakistan’s batting performance was excellent, with opener Fakhar Zaman scoring a brilliant century and putting
+    on a dominant performance with the bat. The Indian bowlers struggled to contain the Pakistani batsmen, and by the end of their innings, Pakistan had posted a challenging total of 338 runs.
+  
+  </p>
+  <p>
+    India’s response with the bat was strong, with opener Shikhar Dhawan and skipper Virat Kohli putting on a solid opening partnership. However, the middle order struggled to keep up with the required run rate, and the Indian team was left with a mountain to climb in their chase of the Pakistani total. Despite a valiant effort from the Indian batsmen, the team ultimately fell short, and Pakistan emerged as the 2017 ICC Champions Trophy winners by a margin of 180 runs.
+    
+  </p>
+  <p>
+    The match was widely praised for its high-quality cricket and the intense competitiveness between the two teams. Fakhar Zaman was named Player of the Match for his brilliant century, while Indian skipper Virat Kohli was also praised for his leadership and determination throughout the tournament.
+  </p>
+  <p>
+    The 2017 ICC Champions Trophy Final was a historic moment for Pakistani cricket, and marked a significant milestone in the team’s journey to become one of the strongest cricketing nations in the world.
+  </p>
+  <p>
+    In conclusion, the 2017 ICC Champions Trophy Final was a highly anticipated match that lived up to the expectations of cricket fans all over the world. The match was played with great intensity and competitiveness, and produced some outstanding individual performances from both teams. Despite India’s defeat, the match was a testament to the high-quality cricket that the two teams are capable of producing. The 2017 ICC Champions Trophy Final will undoubtedly go down in history as one of the greatest cricket matches of all time
+  </p>
+
+
+  <script>
+   /* Open the side panel */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+/* Close the side panel */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+function openPage1(){
+ window.location.href ="http://127.0.0.1:5500/intro/into-to-html/styles/Index.html" ;
+}
+function openPage2(){
+   window.location.href ="http://127.0.0.1:5500/intro/into-to-html/styles/my%20favourite%20book.htm" ;
+}
+function signIn(){
+  var username= window.prompt('Enter Your Username','Username')
+  document.getElementById("si").remove()
+  
+
+}
+      </script>
+
+  </script>
+</body>
+</html>
